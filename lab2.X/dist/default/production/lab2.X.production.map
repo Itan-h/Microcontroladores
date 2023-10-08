@@ -1,0 +1,42 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Sat Sep 30 22:46:16 2023
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x000002
+                   .org_2       code   0x00000a    program   0x000030
+.config_2007_BUILD/DEFAULT/PRODUCTION/P20.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x000004      
+                            0x00000a    0x000021      
+                            0x002007    0x002007      
+            29 out of 8454 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+              ISR_routine   0x00001b    program     static D:\Documentos\Ito\micros\Laboratorios\lab2.X\p20.asm
+                     Loop   0x000018    program     static D:\Documentos\Ito\micros\Laboratorios\lab2.X\p20.asm
+                     Main   0x00000a    program     static D:\Documentos\Ito\micros\Laboratorios\lab2.X\p20.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     Main   0x00000a    program     static D:\Documentos\Ito\micros\Laboratorios\lab2.X\p20.asm
+                     Loop   0x000018    program     static D:\Documentos\Ito\micros\Laboratorios\lab2.X\p20.asm
+              ISR_routine   0x00001b    program     static D:\Documentos\Ito\micros\Laboratorios\lab2.X\p20.asm
+
+

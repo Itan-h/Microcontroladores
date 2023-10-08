@@ -1,0 +1,7 @@
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB0.X\PRACTICA1.ASM 1 : Found directive in column 1. (__config)
+Message[303] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB0.X\PRACTICA1.ASM 1 : Program word too large.  Truncated to core size. (FF39)
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB0.X\PRACTICA1.ASM 3 : Found directive in column 1. (list)
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB0.X\PRACTICA1.ASM 7 : Found directive in column 1. (org)
+Message[302] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB0.X\PRACTICA1.ASM 11 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB0.X\PRACTICA1.ASM 19 : Found directive in column 1. (end)
+Message[303] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB0.X\PRACTICA1.ASM 19 : Program word too large.  Truncated to core size. (FF39)

@@ -1,0 +1,14 @@
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 1 : Found directive in column 1. (__config)
+Message[303] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 1 : Program word too large.  Truncated to core size. (FF39)
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 2 : Found directive in column 1. (LIST)
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 5 : Found directive in column 1. (org)
+Warning[203] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 6 : Found opcode in column 1. (goto)
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 8 : Found directive in column 1. (org)
+Warning[203] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 9 : Found opcode in column 1. (goto)
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 10 : Found directive in column 1. (org)
+Message[302] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 14 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 15 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 18 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[305] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 37 : Using default destination of 1 (file).
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 41 : Found directive in column 1. (end)
+Message[303] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB2.X\P20.ASM 41 : Program word too large.  Truncated to core size. (FF39)
