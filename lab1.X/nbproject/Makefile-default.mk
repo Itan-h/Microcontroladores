@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=practica8.asm
+SOURCEFILES_QUOTED_IF_SPACED=practica3.asm
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/practica8.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/practica8.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/practica3.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/practica3.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/practica8.o
+OBJECTFILES=${OBJECTDIR}/practica3.o
 
 # Source Files
-SOURCEFILES=practica8.asm
+SOURCEFILES=practica3.asm
 
 
 CFLAGS=
@@ -94,22 +94,22 @@ MP_LINKER_DEBUG_OPTION=
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: assemble
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/practica8.o: practica8.asm  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/practica3.o: practica3.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/practica8.o.d 
-	@${RM} ${OBJECTDIR}/practica8.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/practica8.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_SIMULATOR=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/practica8.lst\" -e\"${OBJECTDIR}/practica8.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/practica8.o\" \"practica8.asm\" 
-	@${DEP_GEN} -d "${OBJECTDIR}/practica8.o"
-	@${FIXDEPS} "${OBJECTDIR}/practica8.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
+	@${RM} ${OBJECTDIR}/practica3.o.d 
+	@${RM} ${OBJECTDIR}/practica3.o 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/practica3.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_SIMULATOR=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/practica3.lst\" -e\"${OBJECTDIR}/practica3.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/practica3.o\" \"practica3.asm\" 
+	@${DEP_GEN} -d "${OBJECTDIR}/practica3.o"
+	@${FIXDEPS} "${OBJECTDIR}/practica3.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 else
-${OBJECTDIR}/practica8.o: practica8.asm  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/practica3.o: practica3.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/practica8.o.d 
-	@${RM} ${OBJECTDIR}/practica8.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/practica8.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/practica8.lst\" -e\"${OBJECTDIR}/practica8.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/practica8.o\" \"practica8.asm\" 
-	@${DEP_GEN} -d "${OBJECTDIR}/practica8.o"
-	@${FIXDEPS} "${OBJECTDIR}/practica8.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
+	@${RM} ${OBJECTDIR}/practica3.o.d 
+	@${RM} ${OBJECTDIR}/practica3.o 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/practica3.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/practica3.lst\" -e\"${OBJECTDIR}/practica3.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/practica3.o\" \"practica3.asm\" 
+	@${DEP_GEN} -d "${OBJECTDIR}/practica3.o"
+	@${FIXDEPS} "${OBJECTDIR}/practica3.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 endif
 

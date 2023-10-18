@@ -15,38 +15,31 @@ bcf STATUS,RP0 ;bank 0
 bsf PORTC,5 
  
 main:
-    bsf PORTC,5 
     btfss PORTB,0 ; If RB0 if low execute next instruction, otherwise skip.
     goto sub1 ; program goes to sub1 if RB0 is low
-    bsf PORTC,5 
     btfsc PORTB,0 ;If RB0 if high execute next instruction, otherwise skip.
     goto sub2; program goes to sub2 if RB0 is high.
     goto main
 
 sub1:
-    bsf PORTC,5 
     movlw 0x0F
     movwf PORTD; make low nibble pins in PORTD high, high nibble in low
     call delay1; delay subroutine
-    bsf PORTC,5 
     movlw 0xF0
     movwf PORTD ;;make high nibble pins in PORTD high, low nibble in low.
     call delay1
     goto main
 
 sub2:
-    bsf PORTC,5 
     movlw 0xC3
     movwf PORTD
     call delay2
-    bsf PORTC,5 
     movlw 0x3C
     movwf PORTD
     call delay2
     goto main
 
 delay1:
-    bsf PORTC,5
     decfsz COUNT1,1 ;decrement COUNT1 variable until zero
     goto delay1
     decfsz COUNT2,1 ;decrement COUNT2, if not zero, go back to loop1
@@ -54,7 +47,7 @@ delay1:
     return
 
 delay2:
-    bsf PORTC,5
+    
     movlw 0xAC
     movwf COUNT1
     movlw 0X13

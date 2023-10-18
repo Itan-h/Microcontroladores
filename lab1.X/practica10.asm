@@ -17,19 +17,18 @@ inicio
     banksel TRISD
     bcf OPTION_REG, 7
     clrf TRISD
-    clrf TRISA
     clrf TRISC
+    clrf TRISA
     movlw 0x06
     movwf ADCON1
     banksel PORTD
-    movlw 0x00
-    movwf num
     movlw 0x08
     movwf PORTC
     bcf PORTA, 3
+    movlw 0x00
+    movwf num
     
 Main:
-    #INCLUDE "ConfigBoard.inc" 
     call Delay
     movf num, W
     call seg7
@@ -78,7 +77,7 @@ Delay:
 	decfsz counter3, 1
 	goto loop
 	nop 
-	
+	;#INCLUDE "ConfigBoard.inc" 
 	return
  
 end

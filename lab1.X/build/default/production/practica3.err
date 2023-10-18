@@ -1,0 +1,10 @@
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB1.X\PRACTICA3.ASM 1 : Found directive in column 1. (__config)
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB1.X\PRACTICA3.ASM 2 : Found directive in column 1. (list)
+Warning[205] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB1.X\PRACTICA3.ASM 8 : Found directive in column 1. (org)
+Message[302] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB1.X\PRACTICA3.ASM 14 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[207] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB1.X\PRACTICA3.ASM 33 : Found label after column 1. (loop)
+Message[310] C:\PROGRAM FILES (X86)\MICROCHIP\MPLABX\V4.01\MPASMX\P16F877A.INC 1061 : Superseding current maximum RAM and RAM map.
+Message[302] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB1.X\CONFIGBOARD.INC 12 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB1.X\CONFIGBOARD.INC 13 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB1.X\CONFIGBOARD.INC 14 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\DOCUMENTOS\ITO\MICROS\LABORATORIOS\LAB1.X\CONFIGBOARD.INC 15 : Register in operand not in bank 0.  Ensure that bank bits are correct.

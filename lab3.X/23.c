@@ -1,5 +1,3 @@
-#include <xc.h>
-#include "BoardConfig.h" 
 #pragma config FOSC = XT        // Oscillator Selection bits (XT oscillator)
 #pragma config WDTE = OFF       // Watchdog Timer Enable bit (WDT disabled)
 #pragma config PWRTE = OFF      // Power-up Timer Enable bit (PWRT disabled)
@@ -9,6 +7,9 @@
 #pragma config WRT = OFF        // Flash Program Memory Write Enable bits (Write protection off; all program memory may be written to by EECON control)
 #pragma config CP = OFF         // Flash Program Memory Code Protection bit (Code protection off)
 #define _XTAL_FREQ 4000000 //speed crystal oscilator
+
+#include <xc.h>
+#include "BoardConfig.h" 
 
 #define OFF 0
 #define ON 1

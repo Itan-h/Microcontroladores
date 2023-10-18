@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F877A ]
 [d frameptr 0 ]
-"17 D:\Documentos\Ito\micros\Laboratorios\lab3.X\23.c
+"18 D:\Documentos\Ito\micros\Laboratorios\lab3.X\23.c
 [v _main main `(i  1 e 2 0 ]
 "12 D:\Documentos\Ito\micros\Laboratorios\lab3.X\BoardConfig.h
 [v _Board_init Board_init `(v  1 e 1 0 ]
@@ -47,10 +47,10 @@
 [v _RE2 RE2 `VEb  1 e 0 @74 ]
 "2987
 [v _TRISD0 TRISD0 `VEb  1 e 0 @1088 ]
-"17 D:\Documentos\Ito\micros\Laboratorios\lab3.X\23.c
+"18 D:\Documentos\Ito\micros\Laboratorios\lab3.X\23.c
 [v _main main `(i  1 e 2 0 ]
 {
-"30
+"31
 } 0
 "12 D:\Documentos\Ito\micros\Laboratorios\lab3.X\BoardConfig.h
 [v _Board_init Board_init `(v  1 e 1 0 ]

@@ -13,11 +13,17 @@
  
     org 0x00
     banksel TRISC       ;go to bank 1
-    clrf TRISC              ;clear TRISC - set all PORTB as output   
+    bcf OPTION_REG, 7
+    clrf TRISD              ;clear TRISC - set all PORTB as output   
+    clrf TRISC
+    clrf TRISA
     bsf TRISB,0            ;set RB0 as input.
     banksel PORTC     ; go to bank
     movlw 0x01
+    movwf PORTD
+    movlw 0x20
     movwf PORTC
+    bcf PORTA, 3
     
 
  
@@ -29,18 +35,18 @@ main:
     goto main
     
 ascending:
-    incf PORTC,1          ;if pressed increment PORTC
+    incf PORTD,1          ;if pressed increment PORTC
     call delay 
     movlw 0x09           ;for checking if PORTB = A: put 0x0A to W    
-    subwf PORTC,0     ;subtract 0x0A from W register
+    subwf PORTD,0     ;subtract 0x0A from W register
     btfss STATUS,2     ;check zero flag.
     goto main             ;if not zero (PORTC is not equal to 0x0A), go back to main
-    clrf PORTC
+    clrf PORTD
     call delay;if zero (PORTC is equal to 0x0A), set PORTC to zero
     goto main            ;go back and check the button again
     
 descending:
-    decf PORTC,1       ;if pressed decrement PORTB
+    decf PORTD,1       ;if pressed decrement PORTB
     call delay
     btfss STATUS,2     ;check zero flag.
     goto main          ;if not zero (PORTC is not equal to 0x0A), go back to main
@@ -48,7 +54,7 @@ descending:
     
 ten:
     movlw 0x0A
-    movwf PORTC
+    movwf PORTD
     goto main
     
   
@@ -66,5 +72,6 @@ loop:
     goto loop
     decfsz COUNT3,1
     goto loop
+    
     return
     end 

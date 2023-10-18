@@ -1,37 +1,40 @@
-__config 0x3FB9
+__config 0x3F39
 list p=16F877A
-#include <P16F877A.inc> 
-;----------------------------------------------------------
+#include<P16F877A.inc>
+;------------------------------
     
-count equ 0x20
+counter equ 0x20
     
-org 0x0 
-;--------------------------------------
-goto Start
-    
-Start
-    bsf STATUS, RP0 
-    bcf TRISB, 0 
-    bcf STATUS, RP0 
-;--------------------------------------
-    
-Main
-    bsf PORTB, 0
-    call Delay
-    bcf PORTB, 0
-    call Delay
-    
-    goto Main
-;--------------------------------------
-    
-Delay
-    ;(500-4)/3+1
-    movlw 0xA6
-    movwf count
-    Loop
-        decfsz count, 1
-	goto Loop
-	return
-;--------------------------------------
+org 0x00
 
+ ;------------------------------
+ 
+Start
+    bsf STATUS, RP0
+    bcf TRISD, 0
+    bcf STATUS, RP0
+  
+;------------------------------    
+    
+Main:
+    bsf PORTD, 0
+    call Delay
+    bcf PORTD, 0
+    call Delay
+    goto Main
+    
+;------------------------------
+    
+Delay 
+    ;(500-4)/3+1
+    movlw 0xA0
+    movwf counter
+    loop
+	decfsz counter, 1
+	goto loop
+	#include "ConfigBoard.inc"
+	return
+	
+;------------------------------
+	
 end

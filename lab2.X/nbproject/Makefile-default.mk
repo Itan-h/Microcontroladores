@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=p20.asm
+SOURCEFILES_QUOTED_IF_SPACED=p20.asm p21.asm
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/p20.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/p20.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/p20.o ${OBJECTDIR}/p21.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/p20.o.d ${OBJECTDIR}/p21.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/p20.o
+OBJECTFILES=${OBJECTDIR}/p20.o ${OBJECTDIR}/p21.o
 
 # Source Files
-SOURCEFILES=p20.asm
+SOURCEFILES=p20.asm p21.asm
 
 
 CFLAGS=
@@ -102,6 +102,14 @@ ${OBJECTDIR}/p20.o: p20.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${DEP_GEN} -d "${OBJECTDIR}/p20.o"
 	@${FIXDEPS} "${OBJECTDIR}/p20.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
+${OBJECTDIR}/p21.o: p21.asm  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/p21.o.d 
+	@${RM} ${OBJECTDIR}/p21.o 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/p21.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_SIMULATOR=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/p21.lst\" -e\"${OBJECTDIR}/p21.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/p21.o\" \"p21.asm\" 
+	@${DEP_GEN} -d "${OBJECTDIR}/p21.o"
+	@${FIXDEPS} "${OBJECTDIR}/p21.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
+	
 else
 ${OBJECTDIR}/p20.o: p20.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -110,6 +118,14 @@ ${OBJECTDIR}/p20.o: p20.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/p20.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/p20.lst\" -e\"${OBJECTDIR}/p20.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/p20.o\" \"p20.asm\" 
 	@${DEP_GEN} -d "${OBJECTDIR}/p20.o"
 	@${FIXDEPS} "${OBJECTDIR}/p20.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
+	
+${OBJECTDIR}/p21.o: p21.asm  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/p21.o.d 
+	@${RM} ${OBJECTDIR}/p21.o 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/p21.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/p21.lst\" -e\"${OBJECTDIR}/p21.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/p21.o\" \"p21.asm\" 
+	@${DEP_GEN} -d "${OBJECTDIR}/p21.o"
+	@${FIXDEPS} "${OBJECTDIR}/p21.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 endif
 

@@ -13,14 +13,15 @@ org 0x00
 
 Start
     bsf STATUS, RP0
-    clrf TRISE
+    clrf TRISD
     bcf STATUS, RP0
     
+    
 Main:
-    bcf PORTE, 0
+    bcf PORTD, 0
     call Delay
-    movlw 0x02
-    bsf PORTE, 0
+    bsf PORTD, 0
+    call Delay
     goto Main
     
 Delay 
@@ -35,11 +36,10 @@ Delay
 	goto loop
 	decfsz counter2, 1
 	goto loop
-	decfsz counter3, 1
+	decfsz counter3
 	goto loop
 	nop 
+	#include "ConfigBoard.inc"
 	return
 	
 end
-
-

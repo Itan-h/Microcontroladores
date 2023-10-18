@@ -543,7 +543,7 @@
         <mpasmsuite>
         </mpasmsuite>
       </item>
-      <item path="practica3.asm" ex="true" overriding="false">
+      <item path="practica3.asm" ex="false" overriding="false">
         <MPASMWIN-AS>
         </MPASMWIN-AS>
         <MPASMWIN-LD>
@@ -583,7 +583,7 @@
         <mpasmsuite>
         </mpasmsuite>
       </item>
-      <item path="practica8.asm" ex="false" overriding="false">
+      <item path="practica8.asm" ex="true" overriding="false">
         <MPASMWIN-AS>
         </MPASMWIN-AS>
         <MPASMWIN-LD>

@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.41 build 20230208172133 
-                                                                                               Sun Oct 08 12:16:15 2023
+                                                                                               Wed Oct 11 11:59:26 2023
 
 Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9 
      1                           	processor	16F877A
@@ -228,7 +228,7 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    214 ;;
    215 ;; *************** function _main *****************
    216 ;; Defined at:
-   217 ;;		line 17 in file "23.c"
+   217 ;;		line 18 in file "23.c"
    218 ;; Parameters:    Size  Location     Type
    219 ;;		None
    220 ;; Auto vars:     Size  Location     Type
@@ -259,30 +259,30 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    245                           ;psect for function _main
    246                           
    247                           
-   248                           ;23.c: 18: Board_init();
+   248                           ;23.c: 19: Board_init();
    249                           
    250                           ;incstack = 0
    251                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
    252     07D1  120A  118A  27AD  120A  118A  	fcall	_Board_init
    253                           
-   254                           ;23.c: 19: RC5 = 1;
+   254                           ;23.c: 20: RC5 = 1;
    255     07D6  1687               	bsf	7,5	;volatile
    256                           
-   257                           ;23.c: 21: TRISD0 = 0;
+   257                           ;23.c: 22: TRISD0 = 0;
    258     07D7  1683               	bsf	3,5	;RP0=1, select bank1
    259     07D8  1008               	bcf	8,0	;volatile
    260                           
-   261                           ;23.c: 22: RD0 = 0;
+   261                           ;23.c: 23: RD0 = 0;
    262     07D9  1283               	bcf	3,5	;RP0=0, select bank0
    263     07DA  1008               	bcf	8,0	;volatile
    264     07DB                     l612:
    265                           
-   266                           ;23.c: 24: RD0 = 1;
+   266                           ;23.c: 25: RD0 = 1;
    267     07DB  1283               	bcf	3,5	;RP0=0, select bank0
    268     07DC  1303               	bcf	3,6	;RP1=0, select bank0
    269     07DD  1408               	bsf	8,0	;volatile
    270                           
-   271                           ;23.c: 25: _delay((unsigned long)((500)*(4000000/4000.0)));
+   271                           ;23.c: 26: _delay((unsigned long)((500)*(4000000/4000.0)));
    272     07DE  3003               	movlw	3
    273     07DF  00F2               	movwf	??_main+2
    274     07E0  308A               	movlw	138
@@ -298,12 +298,12 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    284     07E9  2FE4               	goto	u17
    285     07EA  2FEB               	nop2
    286                           
-   287                           ;23.c: 26: RD0 = 0;
+   287                           ;23.c: 27: RD0 = 0;
    288     07EB  1283               	bcf	3,5	;RP0=0, select bank0
    289     07EC  1303               	bcf	3,6	;RP1=0, select bank0
    290     07ED  1008               	bcf	8,0	;volatile
    291                           
-   292                           ;23.c: 27: _delay((unsigned long)((500)*(4000000/4000.0)));
+   292                           ;23.c: 28: _delay((unsigned long)((500)*(4000000/4000.0)));
    293     07EE  3003               	movlw	3
    294     07EF  00F2               	movwf	??_main+2
    295     07F0  308A               	movlw	138
@@ -548,7 +548,7 @@ DATA                 0      0       0      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.41 build 20230208172133 
-Symbol Table                                                                                   Sun Oct 08 12:16:15 2023
+Symbol Table                                                                                   Wed Oct 11 11:59:26 2023
 
                      u17 07E4                       u27 07F4                      l612 07DB  
                     _RA3 002B                      _RC2 003A                      _RD0 0040  

@@ -1,11 +1,11 @@
 MPLINK 5.08, LINKER
-Linker Map File - Created Sun Oct 08 12:29:21 2023
+Linker Map File - Created Tue Oct 10 11:06:59 2023
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
-                   .org_0       code   0x000000    program   0x0000a2
-                   .cinit    romdata   0x000051    program   0x000004
+                   .org_0       code   0x000000    program   0x000036
+                   .cinit    romdata   0x00001b    program   0x000004
 .config_2007_BUILD/DEFAULT/PRODUCTION/PRACTIC       code   0x002007    program   0x000002
 
 
@@ -13,32 +13,28 @@ Linker Map File - Created Sun Oct 08 12:29:21 2023
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x000052      
+                            0x000000    0x00001c      
                             0x002007    0x002007      
-            84 out of 8454 program addresses used, program memory utilization is 0%
+            30 out of 8454 program addresses used, program memory utilization is 0%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                   delay1   0x00001e    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica8.asm
-                   delay2   0x000024    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica8.asm
-                     loop   0x00002b    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica8.asm
-                     main   0x000005    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica8.asm
-                     sub1   0x00000c    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica8.asm
-                     sub2   0x000015    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica8.asm
+                    Delay   0x000008    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica3.asm
+                     Main   0x000003    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica3.asm
+                    Start   0x000000    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica3.asm
+                     loop   0x00000a    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica3.asm
 
 
 
                               Symbols - Sorted by Address
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                     main   0x000005    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica8.asm
-                     sub1   0x00000c    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica8.asm
-                     sub2   0x000015    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica8.asm
-                   delay1   0x00001e    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica8.asm
-                   delay2   0x000024    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica8.asm
-                     loop   0x00002b    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica8.asm
+                    Start   0x000000    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica3.asm
+                     Main   0x000003    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica3.asm
+                    Delay   0x000008    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica3.asm
+                     loop   0x00000a    program     static D:\Documentos\Ito\micros\Laboratorios\lab1.X\practica3.asm
 
 

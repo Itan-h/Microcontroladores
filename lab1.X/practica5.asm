@@ -15,6 +15,7 @@ Start
     bsf STATUS, RP0
     clrf TRISD
     bcf STATUS, RP0
+    bsf PORTC, 5
     
 Main:
     movlw 0x5A
@@ -40,6 +41,7 @@ Delay
 	decfsz counter3
 	goto loop
 	nop 
+	#include "ConfigBoard.inc"
 	return
 	
 end

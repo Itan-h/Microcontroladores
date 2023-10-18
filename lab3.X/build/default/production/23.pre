@@ -1,6 +1,17 @@
 
 # 1 "23.c"
 
+
+# 1
+#pragma config FOSC = XT
+#pragma config WDTE = OFF
+#pragma config PWRTE = OFF
+#pragma config BOREN = OFF
+#pragma config LVP = OFF
+#pragma config CPD = OFF
+#pragma config WRT = OFF
+#pragma config CP = OFF
+
 # 18 "C:/Program Files/Microchip/xc8/v2.41/pic/include\xc.h"
 extern const char __xc8_OPTIM_SPEED;
 
@@ -1835,18 +1846,7 @@ RE1=0;
 RE2=0;
 }
 
-
-# 3 "23.c"
-#pragma config FOSC = XT
-#pragma config WDTE = OFF
-#pragma config PWRTE = OFF
-#pragma config BOREN = OFF
-#pragma config LVP = OFF
-#pragma config CPD = OFF
-#pragma config WRT = OFF
-#pragma config CP = OFF
-
-# 17
+# 18 "23.c"
 int main (){
 Board_init();
 RC5 = 1;

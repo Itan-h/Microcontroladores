@@ -1,40 +1,40 @@
-__config 0x3FB9
+__config 0x3F39
 list p=16F877A
-#include <P16F877A.inc> 
-errorlevel -302
-;----------------------------------------------------------
+#include<P16F877A.inc>
+;------------------------------
     
 cblock 0x20
     count1
     count2
 endc
     
-org 0x00
     
-inicio 
+org 0x00
+
+Start
     bsf STATUS, RP0
     bcf TRISD, 0
     bcf STATUS, RP0
     
-Mainloop:
-    bsf PORTC, 5
-    #INCLUDE "ConfigBoard.inc"
+Main:
     bsf PORTD, 0
     call Delay
-    bsf PORTC, 5
     bcf PORTD, 0
     call Delay
-    goto Mainloop
+    goto Main
     
 Delay 
-    decfsz count1
-    goto Delay
-    decfsz count2
-    goto Delay
-    #INCLUDE "ConfigBoard.inc"
-    return
-    
+	decfsz count1
+	goto Delay
+	decfsz count2
+	goto Delay
+	#include "ConfigBoard.inc"
+	return
+	
 end
+    
+    
+ 
     
 
 
